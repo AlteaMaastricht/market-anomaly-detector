@@ -1,0 +1,208 @@
+{
+  "params": {
+    "seed": 42,
+    "inject_seed": 7,
+    "n_days": 504,
+    "sensitivity": 0.05,
+    "threshold": 2.5,
+    "shock_size_log": 0.08,
+    "volume_multiple": 5.0,
+    "n_price_shocks": 5,
+    "n_volume_spikes": 5
+  },
+  "n_rows": 504,
+  "n_scored_rows": 474,
+  "exact_date": {
+    "tolerance_rows": 0,
+    "n_flagged": 10,
+    "price_shock_detected": 4,
+    "price_shock_total": 5,
+    "price_shock_recall": 0.8,
+    "volume_spike_detected": 0,
+    "volume_spike_total": 5,
+    "volume_spike_recall": 0.0,
+    "n_flagged_matching_a_label": 4,
+    "precision": 0.4
+  },
+  "within_1_day": {
+    "tolerance_rows": 1,
+    "n_flagged": 10,
+    "price_shock_detected": 4,
+    "price_shock_total": 5,
+    "price_shock_recall": 0.8,
+    "volume_spike_detected": 0,
+    "volume_spike_total": 5,
+    "volume_spike_recall": 0.0,
+    "n_flagged_matching_a_label": 4,
+    "precision": 0.4
+  },
+  "labels": [
+    {
+      "timestamp": "2024-05-23",
+      "kind": "price_shock",
+      "magnitude": -0.08,
+      "ensemble_score": -4.371
+    },
+    {
+      "timestamp": "2024-07-10",
+      "kind": "volume_spike",
+      "magnitude": 5.0,
+      "ensemble_score": -0.89
+    },
+    {
+      "timestamp": "2024-09-05",
+      "kind": "price_shock",
+      "magnitude": -0.08,
+      "ensemble_score": -2.851
+    },
+    {
+      "timestamp": "2024-10-23",
+      "kind": "volume_spike",
+      "magnitude": 5.0,
+      "ensemble_score": -1.017
+    },
+    {
+      "timestamp": "2025-02-24",
+      "kind": "volume_spike",
+      "magnitude": 5.0,
+      "ensemble_score": -1.523
+    },
+    {
+      "timestamp": "2025-05-13",
+      "kind": "price_shock",
+      "magnitude": -0.08,
+      "ensemble_score": -2.384
+    },
+    {
+      "timestamp": "2025-06-18",
+      "kind": "price_shock",
+      "magnitude": -0.08,
+      "ensemble_score": -2.612
+    },
+    {
+      "timestamp": "2025-08-14",
+      "kind": "volume_spike",
+      "magnitude": 5.0,
+      "ensemble_score": 0.145
+    },
+    {
+      "timestamp": "2025-09-19",
+      "kind": "price_shock",
+      "magnitude": -0.08,
+      "ensemble_score": -3.233
+    },
+    {
+      "timestamp": "2025-11-27",
+      "kind": "volume_spike",
+      "magnitude": 5.0,
+      "ensemble_score": -1.383
+    }
+  ],
+  "alerts": [
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-05-23T00:00:00",
+      "anomaly_score": 4.37094397225943,
+      "anomaly_type": "PRICE_SHOCK",
+      "confidence": 1.0,
+      "current_price": 94.22226599272282,
+      "explanation": "Significant price movement (-8.98% change)",
+      "severity": "HIGH"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-05-31T00:00:00",
+      "anomaly_score": 2.7551227431355203,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 96.24810160987481,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-06-03T00:00:00",
+      "anomaly_score": 2.8030176836318987,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 96.16326496038715,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-06-04T00:00:00",
+      "anomaly_score": 2.7614612416897213,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 95.70474161435308,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-06-05T00:00:00",
+      "anomaly_score": 2.839011080785255,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 95.64192073445038,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-06-06T00:00:00",
+      "anomaly_score": 2.6217978820019745,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 93.75295760528427,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-06-14T00:00:00",
+      "anomaly_score": 2.662510520215382,
+      "anomaly_type": "UNKNOWN",
+      "confidence": 1.0,
+      "current_price": 88.82357478720385,
+      "explanation": "Statistical anomaly detected in market behavior",
+      "severity": "MEDIUM"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2024-09-05T00:00:00",
+      "anomaly_score": 2.850600864645279,
+      "anomaly_type": "PRICE_SHOCK",
+      "confidence": 1.0,
+      "current_price": 79.17054926939228,
+      "explanation": "Significant price movement (-8.96% change)",
+      "severity": "HIGH"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2025-06-18T00:00:00",
+      "anomaly_score": 2.6116985888237876,
+      "anomaly_type": "PRICE_SHOCK",
+      "confidence": 1.0,
+      "current_price": 77.67861710125705,
+      "explanation": "Significant price movement (-8.83% change)",
+      "severity": "HIGH"
+    },
+    {
+      "symbol": "SYNTH",
+      "timestamp": "2025-09-19T00:00:00",
+      "anomaly_score": 3.233468905046922,
+      "anomaly_type": "VOLUME_SPIKE",
+      "confidence": 1.0,
+      "current_price": 69.31431799264692,
+      "explanation": "Unusual trading volume detected (3.23x normal)",
+      "severity": "HIGH"
+    }
+  ],
+  "clean_series": {
+    "n_scored_rows": 474,
+    "n_flagged": 8,
+    "flagged_fraction": 0.016877637130801686
+  }
+}

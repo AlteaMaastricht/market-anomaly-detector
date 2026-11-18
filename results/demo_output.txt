@@ -1,0 +1,44 @@
+# Command: python examples/demo.py --json results/demo_summary.json
+# Seeds: GBM seed=42, injection seed=7 (defaults). Python 3.14.0, numpy 2.4.4, pandas 3.1.0, scikit-learn 1.8.0
+# Generated: 2026-11-17 during repository preparation
+
+Synthetic GBM: 504 business days, seed=42, inject_seed=7, sensitivity=0.05, threshold=2.5
+Rows with a complete feature vector (scored): 474
+
+Planted anomalies (ensemble score; flagged if < -threshold):
+  2024-05-23  price_shock   magnitude=  -0.08  score=-4.371
+  2024-07-10  volume_spike  magnitude=    5.0  score=-0.89
+  2024-09-05  price_shock   magnitude=  -0.08  score=-2.851
+  2024-10-23  volume_spike  magnitude=    5.0  score=-1.017
+  2025-02-24  volume_spike  magnitude=    5.0  score=-1.523
+  2025-05-13  price_shock   magnitude=  -0.08  score=-2.384
+  2025-06-18  price_shock   magnitude=  -0.08  score=-2.612
+  2025-08-14  volume_spike  magnitude=    5.0  score=0.145
+  2025-09-19  price_shock   magnitude=  -0.08  score=-3.233
+  2025-11-27  volume_spike  magnitude=    5.0  score=-1.383
+
+Alerts raised:
+  2024-05-23  PRICE_SHOCK       HIGH     score=4.37  Significant price movement (-8.98% change)
+  2024-05-31  UNKNOWN           MEDIUM   score=2.76  Statistical anomaly detected in market behavior
+  2024-06-03  UNKNOWN           MEDIUM   score=2.80  Statistical anomaly detected in market behavior
+  2024-06-04  UNKNOWN           MEDIUM   score=2.76  Statistical anomaly detected in market behavior
+  2024-06-05  UNKNOWN           MEDIUM   score=2.84  Statistical anomaly detected in market behavior
+  2024-06-06  UNKNOWN           MEDIUM   score=2.62  Statistical anomaly detected in market behavior
+  2024-06-14  UNKNOWN           MEDIUM   score=2.66  Statistical anomaly detected in market behavior
+  2024-09-05  PRICE_SHOCK       HIGH     score=2.85  Significant price movement (-8.96% change)
+  2025-06-18  PRICE_SHOCK       HIGH     score=2.61  Significant price movement (-8.83% change)
+  2025-09-19  VOLUME_SPIKE      HIGH     score=3.23  Unusual trading volume detected (3.23x normal)
+
+Detection summary (exact_date, tolerance=0 rows):
+  price_shock   recall 4/5
+  volume_spike  recall 0/5
+  precision     4/10 = 0.40
+
+Detection summary (within_1_day, tolerance=1 rows):
+  price_shock   recall 4/5
+  volume_spike  recall 0/5
+  precision     4/10 = 0.40
+
+Same series without injections: 8/474 rows flagged (1.7%)
+
+Note: synthetic-injection recall is NOT real-world performance.

@@ -1,0 +1,14 @@
+# API + live data (optional).
+# The API part was tested on 18 Nov 2026 with Python 3.12.16, fastapi 0.163.2,
+# httpx 0.28.1, uvicorn 0.54.0 and python-dotenv 1.2.4 (5 API tests + a live REST
+# smoke test). The lower bounds below are the versions in the author's original
+# environment and were not re-tested. yfinance and requests (live data) were not
+# executed during preparation.
+-r requirements.txt
+fastapi>=0.104
+uvicorn[standard]>=0.24  # [standard] adds the WebSocket support needed by /ws/{client_id}
+httpx>=0.25            # fastapi.testclient (tests/test_api.py)
+python-dotenv>=1.0     # loads .env in run.py
+yfinance>=0.2.66       # DATA_SOURCE=auto
+requests>=2.31         # Alpha Vantage fallback
+statsmodels>=0.14      # features.calculate_statistical_features (not wired into the API)

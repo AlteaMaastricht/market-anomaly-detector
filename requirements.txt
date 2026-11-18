@@ -1,0 +1,9 @@
+# Core: features, detectors, synthetic data, storage, pipeline, offline demo, tests.
+# Verified during preparation with Python 3.14.0, numpy 2.4.4, pandas 3.1.0,
+# scikit-learn 1.8.0, scipy 1.17.1, pydantic 2.14.2. Lower bounds are the versions
+# in the author's original environment (Python 3.9) and were NOT re-tested.
+numpy>=1.25
+pandas>=2.1
+scikit-learn>=1.3
+scipy>=1.11
+pydantic>=2.5
