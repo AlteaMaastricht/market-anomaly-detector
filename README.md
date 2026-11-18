@@ -28,7 +28,7 @@ The original version did not work end to end: `/detect-anomalies` always
 returned an empty list. Its faults were fixed during repository preparation;
 [`docs/PROVENANCE.md`](docs/PROVENANCE.md) lists every fault and every change.
 
-## 2. Problem
+## 2. Core Purpose
 
 The goal is to spot trading days that look unusual for a given ticker
 (price shocks, volume spikes, volatility bursts) without labelled examples of
