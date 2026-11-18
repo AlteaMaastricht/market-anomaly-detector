@@ -7,3 +7,4 @@ pandas>=2.1
 scikit-learn>=1.3
 scipy>=1.11
 pydantic>=2.5
+joblib>=1.2            # model persistence (MODEL_DIR); also installed by scikit-learn

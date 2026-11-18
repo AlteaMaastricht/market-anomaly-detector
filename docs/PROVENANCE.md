@@ -130,3 +130,6 @@ Documentation and licence only; no code changed.
   - licence section points to `LICENSE`.
 - `requirements-api.txt`: header comment corrected (the API part is tested; live data is not); noted that `uvicorn[standard]` is required for live WebSockets.
 - README §11: AI-assistance sentence inserted in the author-approved wording (decision D7, 18 Nov 2026); the `Status: preparation draft` line removed for publication.
+
+## Post-publication changes
+- `requirements.txt`: declare `joblib>=1.2`, imported by `detectors.py` for optional model persistence (`MODEL_DIR`). It was previously only installed transitively via scikit-learn.
